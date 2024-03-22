@@ -17,6 +17,9 @@ const uimaker=()=>{
         let price=document.createElement("p")
         price.innerHTML=ele.price
 
+        let category=document.createElement("h5")
+        category.innerHTML="ADD-CART"
+
         let del=document.createElement("button")
         del.innerHTML="delete"
   
@@ -32,7 +35,7 @@ const uimaker=()=>{
     
          
         let div=document.createElement("div")
-        div.append(img,title,price,del)
+        div.append(img,title,price,category, del)
 
         div.setAttribute("class","data");
 
@@ -42,4 +45,9 @@ const uimaker=()=>{
     })
      
     }
+
+    let islogin=localStorage.getItem("islogin")
+if(islogin){
+   document.getElementById("logout").innerHTML="logout"
+}
     uimaker()
