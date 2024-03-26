@@ -5,3 +5,9 @@ h1{
     text-transform: uppercase;
     font-weight: 800;
 }
+.sign-up-box{
+   display: inline-block;
+    height: 450px;
+    border: 1px solid black;
+    width: 350px;
+}

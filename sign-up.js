@@ -63,9 +63,7 @@ let islogin=localStorage.getItem("islogin")
 if(islogin){
    document.getElementById("logout").innerHTML="logout"
 }
-else{
-    window.location.href="/home.html"
-}
+
 document.querySelector("#valdi_form").addEventListener("submit", validation_form);
 
 

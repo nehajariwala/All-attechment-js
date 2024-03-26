@@ -37,11 +37,29 @@
              
             </ul>
           </div>
+          <form class="d-flex" role="search" id="search">
+            <input id="search-value" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </nav>
       
 
-   <div id="box"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 pt-5">
+            <div class="btn btn-primary" id="htl">high to low</div><br><br>
+            <div class="btn btn-primary" id="lth">low to high</div><br><br>
+            <div class="btn btn-primary" id="kids">kids</div><br><br>
+            <div class="btn btn-primary" id="male">male</div><br><br>
+            <div class="btn btn-primary" id="female">female</div>
+          </div>
+          <div id="box" class="col-lg-10"></div>
+        </div>
+       
+      </div>
+
+   
     
 <script src="./product.js"></script>
 </body>
