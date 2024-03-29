@@ -1,4 +1,6 @@
 let product = JSON.parse(localStorage.getItem('data')) || []
+let cart = JSON.parse(localStorage.getItem('cart')) || []
+
 
 
 const uimaker = (productdata) => {
@@ -22,7 +24,14 @@ const uimaker = (productdata) => {
 
         let del = document.createElement("button")
         del.innerHTML = "delete"
+     
 
+        let btn = document.createElement("button")
+        btn.innerHTML = "BUY NOW"
+        btn.addEventListener("click",()=>{
+            cart.push({...ele,qty:1});
+            localStorage.setItem("cart",JSON.stringify(cart))
+        })
 
         del.addEventListener("click", () => {
             product.splice(i, 1)
@@ -30,9 +39,11 @@ const uimaker = (productdata) => {
             localStorage.setItem("data", JSON.stringify(product));
 
         })
+
+
        
         let div = document.createElement("div")
-        div.append(img, title, price, category, del)
+        div.append(img, title, price, category, del, btn)
          div.setAttribute("class", "data");
        document.getElementById("box").append(div)
 
@@ -70,7 +81,7 @@ const handalfilter=(val)=>{
 // serching data
 
 const search=(val)=>{
-    let temp=product.filter((ele)=>ele.title==val)
+    let temp=product.filter((ele)=>ele.title.includes(val))
     uimaker(temp)
 }
 const handalserch=(e)=>{

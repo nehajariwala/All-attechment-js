@@ -27,6 +27,7 @@ h1{
  text-transform:capitalize;
 }
 button{
+    margin: 10px;
     padding: 8px 15px 8px 15px;
     border-radius: 10px;
   color: red;
