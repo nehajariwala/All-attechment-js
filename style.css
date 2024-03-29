@@ -4,6 +4,7 @@
    text-align: center;
  
 }
+
 img{
   height: 200px;
  width:50%;
@@ -34,4 +35,9 @@ button{
   text-transform:uppercase;
   font-weight: 700;
 
+}
+.navbar-brand img{
+  width: 120px;
+  height: 120px;
+ 
 }

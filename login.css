@@ -1,6 +1,31 @@
+form{
+    color: white;
+    margin-top:250px;
+}
+body{
+    background-image:url(img/3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1{
+    
     font-weight: 800 !important;
     padding-bottom: 20px;
     font-size: 50px;
     text-align: center;
+    color: white;
+}
+form input{
+    padding:10px 60px 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.btnnn:hover{
+    background-color: wheat;
+    
+}
+.navbar-brand img{
+    width: 120px;
+    height: 120px;
+   
 }
